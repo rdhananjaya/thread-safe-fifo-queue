@@ -26,7 +26,7 @@ void * func(void * arg)
 {
     struct _stru * args = (struct _stru *) arg;
     int number = args->number;
-    int th_number = args->thread_no;
+    //int th_number = args->thread_no;
     queue * q = args->q;
 
     int i;
@@ -36,6 +36,8 @@ void * func(void * arg)
         snprintf(message, 15, "rand: %d", rand());
         enque(q, (void *)message);
     }
+
+    return NULL;
 }
 
 
@@ -52,9 +54,11 @@ void * func_d(void * args)
         free(data);
     }
     print("Func_D exiting....\n");
+
+    return NULL;
 }
 
-int main() 
+int main(void) 
 {
     queue * q = queue_factory();
 

@@ -20,7 +20,7 @@ typedef struct _end_q queue;
 
 
 // create and return the queue
-queue * queue_factory();
+queue * queue_factory(void);
 
 // destory the queue (free all the memory associate with the que even the data)
 void queue_destroy(queue * que);
