@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DEBUG	fifo.c	11;"	d	file:
+QUEUE_TS_H	queue_ts.h	7;"	d
+_end_q	queue_ts.h	/^struct _end_q {$/;"	s
+_end_q::first	queue_ts.h	/^	node * first;$/;"	m	struct:_end_q	access:public
+_end_q::last	queue_ts.h	/^	node * last;$/;"	m	struct:_end_q	access:public
+_node	queue_ts.h	/^struct _node {$/;"	s
+_node::data	queue_ts.h	/^	void *data;$/;"	m	struct:_node	access:public
+_node::next	queue_ts.h	/^	struct _node * next;$/;"	m	struct:_node	typeref:struct:_node::_node	access:public
+_stru	fifo.c	/^struct _stru {$/;"	s	file:
+_stru::number	fifo.c	/^    int number;$/;"	m	struct:_stru	file:	access:public
+_stru::q	fifo.c	/^    queue * q;$/;"	m	struct:_stru	file:	access:public
+_stru::thread_no	fifo.c	/^    int thread_no;$/;"	m	struct:_stru	file:	access:public
+data	queue_ts.h	/^	void *data;$/;"	m	struct:_node	access:public
+deque	fifo.c	/^void * deque(queue * que) $/;"	f	signature:(queue * que)
+deque	queue_ts.h	/^void * deque(queue * que);$/;"	p	signature:(queue * que)
+enque	fifo.c	/^int enque(queue * que, void * data)$/;"	f	signature:(queue * que, void * data)
+enque	queue_ts.h	/^int enque(queue * que, void * data);$/;"	p	signature:(queue * que, void * data)
+first	queue_ts.h	/^	node * first;$/;"	m	struct:_end_q	access:public
+func	fifo.c	/^void * func(void * arg)$/;"	f	signature:(void * arg)
+func_d	fifo.c	/^void * func_d(void * args)$/;"	f	signature:(void * args)
+last	queue_ts.h	/^	node * last;$/;"	m	struct:_end_q	access:public
+main	fifo.c	/^int main() $/;"	f
+mutex	fifo.c	/^pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+next	queue_ts.h	/^	struct _node * next;$/;"	m	struct:_node	typeref:struct:_node::_node	access:public
+node	queue_ts.h	/^typedef struct _node node;$/;"	t	typeref:struct:_node
+number	fifo.c	/^    int number;$/;"	m	struct:_stru	file:	access:public
+number_of_iters	fifo.c	8;"	d	file:
+number_of_threads	fifo.c	6;"	d	file:
+number_of_threads_d	fifo.c	7;"	d	file:
+print	fifo.c	15;"	d	file:
+print	fifo.c	17;"	d	file:
+q	fifo.c	/^    queue * q;$/;"	m	struct:_stru	file:	access:public
+queue	queue_ts.h	/^typedef struct _end_q queue;$/;"	t	typeref:struct:_end_q
+queue_destroy	fifo.c	/^void queue_destroy(queue * que)$/;"	f	signature:(queue * que)
+queue_destroy	queue_ts.h	/^void queue_destroy(queue * que);$/;"	p	signature:(queue * que)
+queue_factory	fifo.c	/^queue * queue_factory()$/;"	f
+queue_factory	queue_ts.h	/^queue * queue_factory();$/;"	p	signature:()
+thread_no	fifo.c	/^    int thread_no;$/;"	m	struct:_stru	file:	access:public
